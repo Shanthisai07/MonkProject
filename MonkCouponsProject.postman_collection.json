@@ -1,0 +1,2016 @@
+{
+	"info": {
+		"_postman_id": "84118421-1606-4242-8ac8-1875f67a70e0",
+		"name": "MonkCouponsProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllCouponDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/monk/getAllCouponDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monk",
+						"getAllCouponDetails"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllCouponDetails",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/monk/getAllCouponDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAllCouponDetails"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:47:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"couponId\": 1,\n        \"couponName\": \"test1\",\n        \"couponType\": \"BxGy\",\n        \"couponCode\": \"getMore\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 0,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": [\n            \"A\",\n            \"V\",\n            \"N\"\n        ],\n        \"getProducts\": [\n            \"B\",\n            \"L\",\n            \"P\"\n        ],\n        \"buyLimit\": 2,\n        \"getLimit\": 2,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1732951452000,\n        \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\"\n    },\n    {\n        \"couponId\": 2,\n        \"couponName\": \"test2\",\n        \"couponType\": \"Cart_wise\",\n        \"couponCode\": \"CART-IT-UP\",\n        \"requiredAmount\": 4000,\n        \"discountPercent\": 25,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1732951713000,\n        \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\"\n    },\n    {\n        \"couponId\": 3,\n        \"couponName\": \"test3\",\n        \"couponType\": \"Product_wise\",\n        \"couponCode\": \"BUY-IT-BIG\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 25,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": [\n            \"D\",\n            \"X\",\n            \"M\"\n        ],\n        \"expiryDays\": null,\n        \"createdAt\": 1732951960000,\n        \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\"\n    }\n]"
+				},
+				{
+					"name": "AllCoupons",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/monk/getAllCouponDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAllCouponDetails"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:40:40 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"couponId\": 1,\n        \"couponName\": \"test1\",\n        \"couponType\": \"BxGy\",\n        \"couponCode\": \"getMore\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 0,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": [\n            \"A\",\n            \"V\",\n            \"N\"\n        ],\n        \"getProducts\": [\n            \"B\",\n            \"L\",\n            \"P\"\n        ],\n        \"buyLimit\": 2,\n        \"getLimit\": 2,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1732951452000,\n        \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\"\n    },\n    {\n        \"couponId\": 2,\n        \"couponName\": \"test2\",\n        \"couponType\": \"Cart_wise\",\n        \"couponCode\": \"CART-IT-UP\",\n        \"requiredAmount\": 4000,\n        \"discountPercent\": 25,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1732951713000,\n        \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\"\n    },\n    {\n        \"couponId\": 3,\n        \"couponName\": \"test3\",\n        \"couponType\": \"Product_wise\",\n        \"couponCode\": \"BUY-IT-BIG\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 25,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": [\n            \"D\",\n            \"X\",\n            \"M\"\n        ],\n        \"expiryDays\": null,\n        \"createdAt\": 1732951960000,\n        \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\"\n    },\n    {\n        \"couponId\": 7,\n        \"couponName\": \"updateCoupon\",\n        \"couponType\": \"Product_wise\",\n        \"couponCode\": \"BIG_PRODUCT\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 50,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": [\n            \"o\",\n            \"p\"\n        ],\n        \"expiryDays\": null,\n        \"createdAt\": 1733329811000,\n        \"expiryDate\": \"2024-12-11T16:30:11.000+00:00\"\n    },\n    {\n        \"couponId\": 19,\n        \"couponName\": \"cartCoupon\",\n        \"couponType\": \"Cart_wise\",\n        \"couponCode\": \"cart-on\",\n        \"requiredAmount\": 2000,\n        \"discountPercent\": 10,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": null,\n        \"getProducts\": null,\n        \"buyLimit\": 0,\n        \"getLimit\": 0,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1733339873000,\n        \"expiryDate\": \"2024-12-11T19:17:53.000+00:00\"\n    },\n    {\n        \"couponId\": 20,\n        \"couponName\": \"Bonanza\",\n        \"couponType\": \"BxGy\",\n        \"couponCode\": \"monk\",\n        \"requiredAmount\": 0,\n        \"discountPercent\": 0,\n        \"thresholdLimit\": 4,\n        \"buyProducts\": [\n            \"B\",\n            \"U\",\n            \"Y\"\n        ],\n        \"getProducts\": [\n            \"G\",\n            \"E\",\n            \"T\"\n        ],\n        \"buyLimit\": 2,\n        \"getLimit\": 1,\n        \"createdBy\": \"TestUser\",\n        \"updateReason\": null,\n        \"products\": null,\n        \"expiryDays\": null,\n        \"createdAt\": 1733339720000,\n        \"expiryDate\": \"2024-12-11T19:15:20.000+00:00\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getCouponDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monk/getCouponDetails?couponId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monk",
+						"getCouponDetails"
+					],
+					"query": [
+						{
+							"key": "couponId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getCouponDetails?couponId=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getCouponDetails"
+							],
+							"query": [
+								{
+									"key": "couponId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:48:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"couponId\": 3,\n    \"couponName\": \"test3\",\n    \"couponType\": \"Product_wise\",\n    \"couponCode\": \"BUY-IT-BIG\",\n    \"requiredAmount\": 0,\n    \"discountPercent\": 25,\n    \"thresholdLimit\": 4,\n    \"buyProducts\": null,\n    \"getProducts\": null,\n    \"buyLimit\": 0,\n    \"getLimit\": 0,\n    \"createdBy\": \"TestUser\",\n    \"updateReason\": null,\n    \"products\": [\n        \"D\",\n        \"X\",\n        \"M\"\n    ],\n    \"expiryDays\": null,\n    \"createdAt\": 1732951960000,\n    \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\"\n}"
+				},
+				{
+					"name": "RequiredParameterMissing",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getCouponDetails?couponId=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getCouponDetails"
+							],
+							"query": [
+								{
+									"key": "couponId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:52:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2024-12-03T19:52:20.866+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"trace\": \"org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'couponId' for method parameter type Integer is present but converted to null\\r\\n\\tat org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:220)\\r\\n\\tat org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueAfterConversion(RequestParamMethodArgumentResolver.java:203)\\r\\n\\tat org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:144)\\r\\n\\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)\\r\\n\\tat jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:1623)\\r\\n\",\n    \"message\": \"Required parameter 'couponId' is not present.\",\n    \"path\": \"/monk/getCouponDetails\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getAvailableCoupons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"userId\": 1234567890,\r\n    \"amount\": 2400.0,\r\n    \"productsInCart\": [\r\n        \"A\",\r\n        \"B\",\r\n        \"D\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monk/getAvailableCoupons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monk",
+						"getAvailableCoupons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 1234567890,\r\n    \"amount\": 2400.0,\r\n    \"productsInCart\": [\r\n        \"A\",\r\n        \"B\",\r\n        \"D\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getAvailableCoupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAvailableCoupons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:49:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"availableCouponsToClaim\": [\n        {\n            \"couponName\": \"test3\",\n            \"couponId\": 3,\n            \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\",\n            \"couponCode\": \"BUY-IT-BIG\",\n            \"couponType\": \"Product_wise\",\n            \"applicable\": true,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": null\n        }\n    ],\n    \"couponsCanBeClaimed\": [\n        {\n            \"couponName\": \"test1\",\n            \"couponId\": 1,\n            \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\",\n            \"couponCode\": \"getMore\",\n            \"couponType\": \"BxGy\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add 1 more products from [A, V, N] and 1 more products from [B, L, P] to claim.\"\n        },\n        {\n            \"couponName\": \"test2\",\n            \"couponId\": 2,\n            \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\",\n            \"couponCode\": \"CART-IT-UP\",\n            \"couponType\": \"Cart_wise\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Cart Total Amount Should reach 4000.0 to claim.\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "NullUserId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": null,\r\n    \"amount\": 2400.0,\r\n    \"productsInCart\": [\r\n        \"A\",\r\n        \"B\",\r\n        \"D\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getAvailableCoupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAvailableCoupons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:54:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"availableCouponsToClaim\": [],\n    \"couponsCanBeClaimed\": []\n}"
+				},
+				{
+					"name": "WithZeroCartAmount",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 1234567890,\r\n    \"amount\": 0.0,\r\n    \"productsInCart\": [\r\n        \"A\",\r\n        \"B\",\r\n        \"D\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getAvailableCoupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAvailableCoupons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 19:55:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"availableCouponsToClaim\": [\n        {\n            \"couponName\": \"test3\",\n            \"couponId\": 3,\n            \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\",\n            \"couponCode\": \"BUY-IT-BIG\",\n            \"couponType\": \"Product_wise\",\n            \"applicable\": true,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": null\n        }\n    ],\n    \"couponsCanBeClaimed\": [\n        {\n            \"couponName\": \"test1\",\n            \"couponId\": 1,\n            \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\",\n            \"couponCode\": \"getMore\",\n            \"couponType\": \"BxGy\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add 1 more products from [A, V, N] and 1 more products from [B, L, P] to claim.\"\n        },\n        {\n            \"couponName\": \"test2\",\n            \"couponId\": 2,\n            \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\",\n            \"couponCode\": \"CART-IT-UP\",\n            \"couponType\": \"Cart_wise\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Cart Total Amount Should reach 4000.0 to claim.\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "OnlyUserID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 1234567890,\r\n    \"amount\": 0.0,\r\n    \"productsInCart\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getAvailableCoupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAvailableCoupons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 20:16:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"availableCouponsToClaim\": [],\n    \"couponsCanBeClaimed\": [\n        {\n            \"couponName\": \"test1\",\n            \"couponId\": 1,\n            \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\",\n            \"couponCode\": \"getMore\",\n            \"couponType\": \"BxGy\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add 2 more products from [A, V, N] and 2 more products from [B, L, P] to claim.\"\n        },\n        {\n            \"couponName\": \"test2\",\n            \"couponId\": 2,\n            \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\",\n            \"couponCode\": \"CART-IT-UP\",\n            \"couponType\": \"Cart_wise\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Cart Total Amount Should reach 4000.0 to claim.\"\n        },\n        {\n            \"couponName\": \"test3\",\n            \"couponId\": 3,\n            \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\",\n            \"couponCode\": \"BUY-IT-BIG\",\n            \"couponType\": \"Product_wise\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add any of these Products [D, X, M] to claim.\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "getAvailableCoupons_SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 1234567890,\r\n    \"amount\": 3800.0,\r\n    \"productsInCart\": [\"A\",\"B\",\"U\",\"X\",\"P\",\"o\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/getAvailableCoupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"getAvailableCoupons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 19:49:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"availableCouponsToClaim\": [\n        {\n            \"couponName\": \"test3\",\n            \"couponId\": 3,\n            \"expiryDate\": \"2024-12-07T07:32:40.000+00:00\",\n            \"couponCode\": \"BUY-IT-BIG\",\n            \"couponType\": \"Product_wise\",\n            \"applicable\": true,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": null\n        },\n        {\n            \"couponName\": \"updateCoupon\",\n            \"couponId\": 7,\n            \"expiryDate\": \"2024-12-11T16:30:11.000+00:00\",\n            \"couponCode\": \"BIG_PRODUCT\",\n            \"couponType\": \"Product_wise\",\n            \"applicable\": true,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": null\n        },\n        {\n            \"couponName\": \"cartCoupon\",\n            \"couponId\": 19,\n            \"expiryDate\": \"2024-12-11T19:17:53.000+00:00\",\n            \"couponCode\": \"cart-on\",\n            \"couponType\": \"Cart_wise\",\n            \"applicable\": true,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": null\n        }\n    ],\n    \"couponsCanBeClaimed\": [\n        {\n            \"couponName\": \"test1\",\n            \"couponId\": 1,\n            \"expiryDate\": \"2024-12-07T07:24:12.000+00:00\",\n            \"couponCode\": \"getMore\",\n            \"couponType\": \"BxGy\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add 1 more products from [A, V, N] to claim.\"\n        },\n        {\n            \"couponName\": \"test2\",\n            \"couponId\": 2,\n            \"expiryDate\": \"2024-12-07T07:28:33.000+00:00\",\n            \"couponCode\": \"CART-IT-UP\",\n            \"couponType\": \"Cart_wise\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Cart Total Amount Should reach 4000.0 to claim.\"\n        },\n        {\n            \"couponName\": \"Bonanza\",\n            \"couponId\": 20,\n            \"expiryDate\": \"2024-12-11T19:15:20.000+00:00\",\n            \"couponCode\": \"monk\",\n            \"couponType\": \"BxGy\",\n            \"applicable\": false,\n            \"thresholdLimit\": 4,\n            \"requiredCondition\": \"Please add 1 more products from [G, E, T] to claim.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "claimCoupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"userId\": 1234,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monk/claimCoupon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monk",
+						"claimCoupon"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UserId_FAILURE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 0,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:11:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please provide UserId.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "CartAmount_Failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 0.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:12:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please provide Cart Amount.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "CartAmount_mismatch",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2000.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:15:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Cart amount mismatch with sum of products amount.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "valid products amount",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2000.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":0,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:21:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please provide valid products amount.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "valid products amount_2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2000.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":-1,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:21:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please provide valid products amount.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "provide coupon code",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2000.0,\r\n    \"couponCode\": \"\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:32:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please provide coupon code.\",\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": null,\n    \"thresholdLimit\": null\n}"
+				},
+				{
+					"name": "Apply_Failure_INSUFFICIENT_PRODUCTS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"D\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:33:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"To apply coupon, please add at least one of these products: B,L,P\",\n    \"errorCode\": \"INSUFFICIENT_PRODUCTS\",\n    \"amountAfterCouponApplied\": 2400,\n    \"thresholdLimit\": 0\n}"
+				},
+				{
+					"name": "BxGy_SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"getMore\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"P\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:34:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": 2400,\n    \"thresholdLimit\": 3\n}"
+				},
+				{
+					"name": "INVALID_COUPON_CODE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"BUY-IT-BUG\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"X\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:36:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Invalid coupon code.\",\n    \"errorCode\": \"INVALID_COUPON_CODE\",\n    \"amountAfterCouponApplied\": 0,\n    \"thresholdLimit\": 0\n}"
+				},
+				{
+					"name": "Product_wise_Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 2400.0,\r\n    \"couponCode\": \"BUY-IT-BIG\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"X\":1200\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:36:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": 2100,\n    \"thresholdLimit\": 3\n}"
+				},
+				{
+					"name": "cart_wise_success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"userId\": 123456,\r\n    \"cartAmount\": 4000.0,\r\n    \"couponCode\": \"CART-IT-UP\",\r\n    \"cartProducts\": {\r\n        \"A\":800,\r\n        \"V\":400,\r\n        \"X\":1200,\r\n        \"B\":1600\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/claimCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"claimCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:39:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null,\n    \"amountAfterCouponApplied\": 3000,\n    \"thresholdLimit\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "createOrUpdateCoupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"test5\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": 0,\r\n    \"discountPercent\": 50,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"Q\", \"W\", \"E\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monk",
+						"createOrUpdateCoupon"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product_wise_SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"test4\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": 0.0,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"Q\", \"W\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Dec 2024 20:31:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null\n}"
+				},
+				{
+					"name": "UpdateCoupon",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:30:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null\n}"
+				},
+				{
+					"name": "INVALID_COUPON_CODE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":null,\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:30:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter Coupon code.\",\n    \"errorCode\": \"INVALID_COUPON_CODE\"\n}"
+				},
+				{
+					"name": "INVALID_COUPON_NAME",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": null,\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:31:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter Coupon name.\",\n    \"errorCode\": \"INVALID_COUPON_NAME\"\n}"
+				},
+				{
+					"name": "INVALID_COUPON_TYPE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": null,\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:32:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter Coupon Type.\",\n    \"errorCode\": \"INVALID_COUPON_TYPE\"\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_PRODUCT_WISE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:33:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Products and Discount Percent.\",\n    \"errorCode\": \"INVALID_DATA_FOR_PRODUCT_WISE\"\n}"
+				},
+				{
+					"name": "INVALID_THRESHOLD_LIMIT",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 50.0,\r\n    \"thresholdLimit\": null,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:33:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter Threshold Limit.\",\n    \"errorCode\": \"INVALID_THRESHOLD_LIMIT\"\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_PRODUCT_WISE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"BIG_PRODUCT\",\r\n    \"couponName\": \"updateCoupon\",\r\n    \"couponType\": \"Product_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": null,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": [\"o\", \"p\"],\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:36:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Products and Discount Percent.\",\n    \"errorCode\": \"INVALID_DATA_FOR_PRODUCT_WISE\"\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_CART_WISE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"cart-on\",\r\n    \"couponName\": \"cartCoupon\",\r\n    \"couponType\": \"Cart_wise\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": 25.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:39:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Required Amount and Discount Percent.\",\n    \"errorCode\": \"INVALID_DATA_FOR_CART_WISE\"\n}"
+				},
+				{
+					"name": "Cart_wise_SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"cart-on\",\r\n    \"couponName\": \"cartCoupon\",\r\n    \"couponType\": \"Cart_wise\",\r\n    \"requiredAmount\": 4000,\r\n    \"discountPercent\": 25.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": null,\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:40:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_CART_WISE_2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"cart-on\",\r\n    \"couponName\": \"cartCoupon\",\r\n    \"couponType\": \"Cart_wise\",\r\n    \"requiredAmount\": 4000,\r\n    \"discountPercent\": 25.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": null,\r\n    \"getProducts\": [],\r\n    \"buyLimit\": null,\r\n    \"getLimit\": null,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 16:41:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Required Amount and Discount Percent.\",\n    \"errorCode\": \"INVALID_DATA_FOR_CART_WISE\"\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_BxGy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"monk\",\r\n    \"couponName\": \"Bonanza\",\r\n    \"couponType\": \"BxGy\",\r\n    \"requiredAmount\": 4000,\r\n    \"discountPercent\": 25.0,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": [\"B\",\"U\",\"Y\"],\r\n    \"getProducts\": [\"G\",\"E\",\"T\"],\r\n    \"buyLimit\": 2,\r\n    \"getLimit\": 1,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 19:13:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Buy/Get Products and Buy/Get Limits.\",\n    \"errorCode\": \"INVALID_DATA_FOR_BxGy\"\n}"
+				},
+				{
+					"name": "BxGy_SUCCESS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"monk\",\r\n    \"couponName\": \"Bonanza\",\r\n    \"couponType\": \"BxGy\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": null,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": [\"B\",\"U\",\"Y\"],\r\n    \"getProducts\": [\"G\",\"E\",\"T\"],\r\n    \"buyLimit\": 2,\r\n    \"getLimit\": 1,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 19:15:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"errorDescription\": null,\n    \"errorCode\": null\n}"
+				},
+				{
+					"name": "INVALID_DATA_FOR_BxGy_2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"couponId\": 0,\r\n    \"couponCode\":\"monk\",\r\n    \"couponName\": \"Bonanza\",\r\n    \"couponType\": \"BxGy\",\r\n    \"requiredAmount\": null,\r\n    \"discountPercent\": null,\r\n    \"thresholdLimit\": 4,\r\n    \"buyProducts\": [\"B\",\"U\",\"Y\"],\r\n    \"getProducts\": [\"G\",\"E\",\"T\"],\r\n    \"buyLimit\": 0,\r\n    \"getLimit\": 1,\r\n    \"createdBy\": \"TestUser\",\r\n    \"updateReason\": null,\r\n    \"products\": null,\r\n    \"expiryDays\": 7,\r\n    \"createdAt\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/monk/createOrUpdateCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monk",
+								"createOrUpdateCoupon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 19:15:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"FAILURE\",\n    \"errorDescription\": \"Please enter only Buy/Get Products and Buy/Get Limits.\",\n    \"errorCode\": \"INVALID_DATA_FOR_BxGy\"\n}"
+				}
+			]
+		}
+	]
+}
